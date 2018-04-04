@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-main (2)",
+      "appliesTo": "main (2).cpp",
+      "type": "launch"
+    }
+  ]
+}
