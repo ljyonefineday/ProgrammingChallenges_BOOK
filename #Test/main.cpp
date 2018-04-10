@@ -1,17 +1,31 @@
 #include <iostream>
 
+float* matrix_multi3331(float aa[3][3], float bb[3]){
+    static float rslt[3]={0.0,0.0,0.0};
+    for (int ii=0;ii<3;ii++){
+        for(int jj=0;jj<3;jj++){
+            rslt[ii]=aa[ii][jj]*bb[jj];
+        }
+    }
+    return rslt;
+}
+
+
+
 int main(void){
+    float aa[3][3]={{1,2,3},{4,5,6},{7,8.9}};
+    float bb[3]={1,2,3};
+    float *rslt;
 
-    int a(1);
-    char b('3');
+    rslt=matrix_multi3331(aa,bb);
 
-    int test(a+(int)b);
-    char test2(a);
+    for( int ii=0;ii<3;ii++){
+        
+            printf("%f \n",rslt[ii]);
+        
+    }
 
-    std::cout<<a<<std::endl;
-    std::cout<<test2<<std::endl;
-    std::cout<<b<<std::endl;
-    std::cout<<test<<std::endl;
 
     return 0;
+
 }

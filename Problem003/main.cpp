@@ -7,7 +7,7 @@ void printing_func();
 
 int main(void){
 
-    int how_many_people[]=0;
+    int how_many_people[]={0};
          
 
 
