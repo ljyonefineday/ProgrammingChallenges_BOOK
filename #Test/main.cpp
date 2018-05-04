@@ -16,7 +16,7 @@ int main(void){
     float *rslt;
 
     rslt=matrix_multi3331(aa,bb);
-    bb=*rslt;
+    
 
     for( int ii=0;ii<3;ii++){
         
